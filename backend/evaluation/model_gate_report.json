@@ -1,0 +1,161 @@
+{
+  "model": "sotunq/crypto-macro-sentiment",
+  "datasets": {
+    "eval_csv": "D:\\Final - Đề Án\\backend\\data\\eval_crypto_news.csv",
+    "test_csv": "D:\\Final - Đề Án\\backend\\training\\data\\test.csv"
+  },
+  "rules": {
+    "min_samples": 300,
+    "min_macro_f1": 0.78,
+    "min_class_recall": 0.68,
+    "min_bullish_recall": 0.72,
+    "min_ci_lower_macro_f1": 0.72,
+    "min_delta_vs_finbert": 0.01
+  },
+  "metrics": {
+    "eval": {
+      "n_samples": 15,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "per_class": {
+        "bearish": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "neutral": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "bullish": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "pred_distribution": {
+        "bullish": 5,
+        "bearish": 5,
+        "neutral": 5
+      },
+      "true_distribution": {
+        "bullish": 5,
+        "bearish": 5,
+        "neutral": 5
+      }
+    },
+    "test": {
+      "n_samples": 534,
+      "accuracy": 0.8576779026217228,
+      "precision_macro": 0.8536745512407924,
+      "recall_macro": 0.8503714165589074,
+      "f1_macro": 0.8520055291851648,
+      "per_class": {
+        "bearish": {
+          "precision": 0.8734177215189873,
+          "recall": 0.8625,
+          "f1": 0.8679245283018868
+        },
+        "neutral": {
+          "precision": 0.8813559322033898,
+          "recall": 0.8873720136518771,
+          "f1": 0.8843537414965986
+        },
+        "bullish": {
+          "precision": 0.80625,
+          "recall": 0.8012422360248447,
+          "f1": 0.8037383177570093
+        }
+      },
+      "pred_distribution": {
+        "neutral": 295,
+        "bullish": 160,
+        "bearish": 79
+      },
+      "true_distribution": {
+        "neutral": 293,
+        "bullish": 161,
+        "bearish": 80
+      }
+    },
+    "combined": {
+      "n_samples": 549,
+      "accuracy": 0.8615664845173042,
+      "precision_macro": 0.8588023088023088,
+      "recall_macro": 0.8556929653077372,
+      "f1_macro": 0.8572316480348289,
+      "per_class": {
+        "bearish": {
+          "precision": 0.8809523809523809,
+          "recall": 0.8705882352941177,
+          "f1": 0.8757396449704142
+        },
+        "neutral": {
+          "precision": 0.8833333333333333,
+          "recall": 0.889261744966443,
+          "f1": 0.8862876254180602
+        },
+        "bullish": {
+          "precision": 0.8121212121212121,
+          "recall": 0.8072289156626506,
+          "f1": 0.8096676737160121
+        }
+      },
+      "pred_distribution": {
+        "bullish": 165,
+        "bearish": 84,
+        "neutral": 300
+      },
+      "true_distribution": {
+        "bullish": 166,
+        "bearish": 85,
+        "neutral": 298
+      }
+    }
+  },
+  "bootstrap_ci_macro_f1_95": {
+    "lower": 0.8242,
+    "upper": 0.883
+  },
+  "baseline": {
+    "finbert_macro_f1_combined": null
+  },
+  "gate": {
+    "overall_pass": true,
+    "checks": [
+      {
+        "name": "min_samples",
+        "pass": true,
+        "actual": 549,
+        "target": ">= 300"
+      },
+      {
+        "name": "macro_f1",
+        "pass": true,
+        "actual": 0.8572,
+        "target": ">= 0.78"
+      },
+      {
+        "name": "min_class_recall",
+        "pass": true,
+        "actual": 0.8072,
+        "target": ">= 0.68"
+      },
+      {
+        "name": "bullish_recall",
+        "pass": true,
+        "actual": 0.8072,
+        "target": ">= 0.72"
+      },
+      {
+        "name": "macro_f1_ci_lower",
+        "pass": true,
+        "actual": 0.8242,
+        "target": ">= 0.72"
+      }
+    ]
+  }
+}

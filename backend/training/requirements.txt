@@ -1,0 +1,10 @@
+# Dependencies cho training (chạy local hoặc Colab)
+# pip install -r backend/training/requirements.txt
+
+datasets>=2.21.0,<4.0.0
+transformers>=4.44.0
+accelerate>=0.34.0
+evaluate
+scikit-learn
+pandas
+torch

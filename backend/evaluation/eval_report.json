@@ -1,0 +1,29 @@
+{
+  "n_samples": 15,
+  "accuracy": 0.8,
+  "precision_macro": 0.8333,
+  "recall_macro": 0.8,
+  "f1_macro": 0.7955,
+  "labels": [
+    "positive",
+    "neutral",
+    "negative"
+  ],
+  "per_class": {
+    "positive": {
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75
+    },
+    "neutral": {
+      "precision": 0.6667,
+      "recall": 0.8,
+      "f1": 0.7273
+    },
+    "negative": {
+      "precision": 0.8333,
+      "recall": 1.0,
+      "f1": 0.9091
+    }
+  }
+}

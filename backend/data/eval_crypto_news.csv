@@ -1,0 +1,16 @@
+id,headline,label,source
+1,"Bitcoin surges past $70,000 as spot ETF inflows hit record high",positive,coindesk
+2,Ethereum network upgrade successfully reduces gas fees by 40%,positive,coindesk
+3,"MicroStrategy adds another $500 million worth of Bitcoin to its treasury",positive,coindesk
+4,Solana ecosystem sees massive growth with new DeFi protocols launching,positive,coindesk
+5,Major crypto exchange announces new institutional custody service,positive,coindesk
+6,SEC sues major cryptocurrency exchange over unregistered securities offerings,negative,coindesk
+7,"Hackers drain $200 million from a leading DeFi lending protocol",negative,coindesk
+8,"Bitcoin price crashes below $50,000 amid heavy liquidations",negative,coindesk
+9,FTX founder sentenced to 25 years in prison for fraud,negative,coindesk
+10,Regulators impose strict new rules forcing several crypto firms to shut down,negative,coindesk
+11,Bitcoin trades sideways as investors await the next Fed interest rate decision,neutral,coindesk
+12,Ethereum developers schedule the next network hard fork for later this year,neutral,coindesk
+13,Crypto market capitalization remains largely unchanged over the weekend,neutral,coindesk
+14,New report analyzes on-chain metrics across major layer-one blockchains,neutral,coindesk
+15,Coinbase publishes its quarterly report detailing trading volumes and revenue,neutral,coindesk

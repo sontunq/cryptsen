@@ -1,0 +1,14 @@
+fastapi>=0.110.0
+uvicorn[standard]
+httpx
+aiolimiter>=1.1.0
+sqlalchemy>=2.0
+aiosqlite
+apscheduler
+pytz
+pydantic-settings>=2.0
+python-dotenv
+google-genai>=1.0.0
+transformers>=4.40.0
+torch
+anyio
